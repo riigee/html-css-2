@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox Demo</title>
     <style>
+      body{
+        --box-size: 120px;
+      }
       #a {
         background-color: green;
         width: 150px;
-        height: 150px;
+        height: var(--box-size);
         border-radius: 50%;
       }
       #b {
-        height: 50px;
+        height: var(--box-size);
         background-color: red;
         width: 250px;
       }
       #c {
         background-color: blue;
         width: 100px;
-        height: 50px;
+        height: var(--box-size);
       }
       .special-layout{
-        height: 700px;
+        height: var(--box-size);
         border: 2px solid black;
         display: flex;
         flex-direction: row;
